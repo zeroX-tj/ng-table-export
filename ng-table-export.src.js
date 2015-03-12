@@ -23,7 +23,7 @@ angular.module('ngTableExport', [])
                         var tr = angular.element(row),
                             tds = tr.find('th'),
                             rowData = '';
-                        if (tr.hasClass('ng-table-filters')) {
+                        if (tr.hasClass('ng-table-filters')||tr.hasClass('pmm_row')) {
                             return;
                         }
                         if (tds.length == 0) {
